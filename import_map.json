@@ -6,7 +6,7 @@
     "config": "https://deno.land/x/dotenv@v3.2.0/mod.ts",
     "telegram-bot": "https://deno.land/x/telegram_bot_api@0.4.0/mod.ts",
 
-    "chatgpt": "https://cdn.skypack.dev/chatgpt@2.0.5",
+    "chatgpt": "https://cdn.skypack.dev/chatgpt@2.0.5/",
 
     "controllers/": "./src/controllers/"
   }
