@@ -32,9 +32,11 @@ class BotService {
 
     const answer = await this.chatGPTGetAnswer(update.message.text);
 
-    this._bot.handleUpdate({
-      ...update,
-      message: { ...update.message, text: answer },
+    this._bot.sendMessage({
+      chat_id: update.message.chat.id,
+      text: answer,
+      reply_to_message_id: update.message.message_id,
+      parse_mode: "Markdown",
     });
   }
 
